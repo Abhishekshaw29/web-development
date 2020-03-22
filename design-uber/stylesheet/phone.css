@@ -1,0 +1,250 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position:relative;
+}
+#logo{
+    margin:17px 30px;
+
+}
+#logo img{
+    height:68px;
+    width: 68px;
+
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    font-size: 1.3rem;
+    list-style:none;
+}
+#navbar ul li a{
+    display:block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    }
+    #navbar ul li a:hover{
+    color:black;
+    background-color: white;
+    }
+#navbar::before{
+    content:" ";
+    position: absolute;
+    height:100%;
+    width: 100%;
+    z-index:-1;
+    left: 0px;
+    top: 0px;
+
+    }
+    #navbar{
+        position:sticky;
+        top: 0px;
+        background-color:black;
+        opacity:0.8;
+
+
+    }
+    #home{
+        display: flex;
+        flex-direction: column;
+        padding:79px 10px;
+        justify-content: center;
+        align-items: center;
+        height: 460px;
+    }
+    #home::before{
+        content:" ";
+    background:url('../img/main4.jpg') no-repeat center center/cover;
+    position: absolute;
+    height:100%;
+    width: 100%;
+    z-index: -1;
+    opacity:0.8;
+
+    }
+    .h-primary{
+        font-size: 3.3rem;
+        padding: 45px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
+    .h-secondary{
+        font-size: 2.3rem;
+        padding: 18px;
+        font-family: 'Times New Roman', Times, serif;
+        }
+   #home h1{
+       color:black;
+       text-align: center;
+       font-family: 'Times New Roman', Times, serif;
+       font-weight: bold;
+       height: 17px;
+
+
+    }
+    #home p{
+       color:black;
+       font-weight: bold;
+       text-align: center;
+       padding: 10px;
+       font-size: 1.3rem;
+       font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .btn{
+        padding: 7px 22px;
+        border: 2px solid black;
+        background:brown;
+        color: white;
+        margin: 13px 20px;
+        font-size: 1rem;
+        border-radius:10px;
+        cursor: pointer;
+
+    }
+    .btn:hover{
+        background-color:rgb(163, 27, 27);
+    }
+    #services{
+        margin: 34px;
+        display: flex;
+
+
+    }
+    #services .box{
+        border: 2px solid brown;
+        margin: 26px;
+        border-radius: 14px;
+        background-color:rgb(245, 225, 231);
+
+        
+    }
+    #services .box img{
+        border: 2px;
+        height: 160px;
+        width: 160px;
+        display: block;
+        margin:auto;
+        align-items: center;
+        border-radius:90px;
+        padding:10px;
+
+    }
+    .center{
+        text-align: center;
+    } 
+    #client-section{
+        height: 415px;
+        margin: 0px 47px;
+        border-radius: 15px;
+    }
+    #client-section::before{
+        content: "";
+        position: absolute;
+        background:url('../img/main2.jpg') center center/cover;
+        z-index: -1;
+        width: 93%;
+        height: 56%;
+        opacity:0.6;
+
+    }
+    #client{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    #client img{
+
+        height: 120px;
+        width:120px;
+        align-items: center;
+        border-radius:100px;
+        cursor: pointer;
+        padding: 40px;
+    }
+    .client-item{
+        padding: 30px;
+        margin:-83px -28px;
+
+    }
+    .ttn{
+        background:transparent;
+        color: white;
+        margin:30px 140px;
+        font-size: 1rem;
+        border-radius:10px;
+        cursor: pointer;
+        align-content: center;
+        color:brown;
+
+    }
+    .ttn:hover{
+        background-color: rgb(221, 122, 122);
+        color: black;
+    }
+    .box{
+        align-items: center;
+    }
+    #contact{
+
+        position: relative;
+    }
+    #contact::before{
+        content:"";
+        background:url('../img/contact.jpg')center center/cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        opacity: 0.7;
+    }
+    .h-le{
+
+        margin: -4px;
+        padding: 10px;
+        font-size: 50px;
+    }
+footer{
+background-color: black;
+color: blanchedalmond;
+padding: 10px;
+}
+#contact-box input,
+#contact-box textarea{
+width:100%;
+height:100%;
+padding:10px;
+border: 2px solid black;
+margin:11px 10px ;
+border-radius: 5px;
+
+}
+#contact-box{
+display:flex;
+justify-content: center;
+align-items: center;
+padding-bottom: 5px;
+}
+#contact-box form{
+width:40%;
+}
+
+
+label{
+margin-left: 22px;
+color: black;
+font-size: 15px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-weight: bolder;
+}
