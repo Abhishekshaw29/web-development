@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#{title}</title>
+</head>
+style
+    include ../static/style.css
+<body>
+    <nav>
+        <ul>
+            <li class="item"><a href="/"> Home</li></a>
+            <li class="item"><a href="/about"> About</li></a>
+            <li class="item"><a href="/services"> Services</li></a>
+            <li class="item"><a href="/contact"> Contact us</li></a>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Bumper Discount get gym membership at $99 fill out the form !</h2>
+        <form action="/" method="POST">
+            <input type="text" name="name" placeholder="enter your name">
+            <input type="text" name="age"  placeholder="enter your age">
+            <input type="text" name="gender" placeholder="enter your gender">
+            <input type="text" name="phone" placeholder="enter your number">
+            <input type="text" name="email" placeholder="enter your email">
+            <textarea name="address"cols="30" rows="10" placeholder="enter your address"></textarea>
+            <button class="btn" type="submit">submit now</button>
+    </form>
+     </div>
+</body>
+</html>
