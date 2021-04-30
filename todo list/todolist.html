@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+  <title>TO DO LIST</title>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand"> !! LIST !!</a>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-danger" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <!-- heading -->
+  <div class="conatiner my-4">
+    <h2 class="text-center text-danger"><abbr>TODOs LIST</abbr></h2>
+
+  </div>
+  <!-- todo list -->
+
+  <div class="mb-3 mx-4">
+    <label for="title" class="form-label">Title</label>
+    <input type="text" class="form-control" id="tittle" placeholder="Enter The Title">
+  </div>
+  <div class="mx-4 mb-3">
+    <label for="Description">Description</label>
+    <textarea class="form-control" id="desc" placeholder="Enter the task Description" row="3"></textarea>
+  </div>
+  <button type="submit" id="add" class="btn btn-success mx-4">Add To List</button>
+
+
+  <div class="items my-4 mx-4">
+    <h2 class="text-uppercase text-center my-4 ">Your Items</h2>
+    <table class="table">
+      <thead my-4>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Heading</th>
+          <th scope="col">Description</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody id="tablebody">
+        <!-- <tr>
+          <th scope="row">1</th>
+          <td>coffee</td>
+          <td>Buy a coffee company</td>
+          <td>
+            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+          </td>
+        </tr>
+      </tbody> -->
+    </table>
+    <br><br><br><br>
+    <hr>
+    <footer class="text-center footer">
+      <button type="button" onclick="emp()" class="btn btn-outline-danger btn-lg btn-block mx-4">EMPTY LIST</button>
+    </footer>
+  </div>
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
