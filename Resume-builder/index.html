@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>CV builder</title>
+</head>
+
+<body>
+
+    <!-- cv form -->
+    <div class="container" id="cv-form">
+        <h1 class="text-center my-4 mx-4">CV Builder</h1>
+        <p class="text-center">By Abhishek Shaw</p>
+        <div class="row my-5">
+            <div class="col-md-6 my-5">
+                <h1>Personal Information</h1>
+                <div class="form-group mt-2">
+                    <label for="nameField">Your Name</label>
+                    <input type="text" name="name" id="nameField" class="form-control" placeholder="  Satarupa Roy" />
+                </div>
+                <div class="form-group mt-2">
+                    <label for="PhoneField">Phone Number</label>
+                    <input type="tel" name="phone " id="PhoneField" class="form-control" placeholder="  9883059628" />
+                </div>
+                <div class="form-group mt-2">
+                    <label for="EmailField">Email Id</label>
+                    <input type="email" name="mail" id="EmailField" class="form-control"
+                        placeholder=" abhishekshaw99@gmail.com" />
+                </div>
+                <div class="form-group mt-2">
+                    <label for="DobField">Date of Birth</label>
+                    <input type="date" name="dob" id="DObField" class="form-control" />
+                </div>
+                <div class="form-group mt-2">
+                    <label for="AddressField">Address</label>
+                    <textarea name="address" id="AddressField" rows="2" class="form-control"
+                        placeholder="14/1 sarat bose lane kolkata 700035"></textarea>
+                </div>
+                <div class="form-group mt-2">
+                    <label for="NationField">Nationality</label>
+                    <input type="text" name="nationality" id="NationField" class="form-control"
+                        placeholder=" Indian " />
+                </div>
+                <div class="form-group mt-2">
+                    <label for="InterestField">Interest</label>
+                    <input type="text" name="interest" id="InterestField" class="form-control"
+                        placeholder="  Cricket matches , writing , Reading Books." />
+                </div>
+                <div class="form-group mt-2">
+                    <label for="StrengthField">Strength</label>
+                    <input type="text" name="strength" id="StrengthField" class="form-control"
+                        placeholder=" Adaptibility , Team Worker, Leadership ." />
+                </div>
+                <div class="form-group mt-2">
+                    <label for="LangField">Langauges Known </label>
+                    <input type="text" name="langauges" id="LangField" class="form-control"
+                        placeholder=" English, Bengali , Hindi. " />
+                </div>
+                <div class="form-group mt-2">
+                    <label for="PlaceField">Place</label>
+                    <input type="text" name="place" id="PlaceField" class="form-control" placeholder=" kolkata " />
+                </div>
+                <div class="form-group mt-2">
+                    <label for="dateField">Date</label>
+                    <input type="date" name="date" id="dateField" class="form-control" />
+                </div>
+                <div class="form-group mt-2">
+                    <label for="ImgField">Choose your Image</label>
+                    <input type="file" name="image" id="ImgField" class="form-control" />
+                </div>
+            </div>
+
+
+            <div class="col-md-6 my-5">
+                <h1>Professional Information</h1>
+                <div class="form-group mt-2">
+                    <label for="ObjField">Career Objective</label>
+                    <textarea name="objective" id="ObjField" class="form-control" placeholder="eg. To work for an organization which provides me the opportunity to explore new areas and gain knowledge in this.
+                    dynamic and disruptive environment."></textarea>
+                </div>
+                <h5>ACADEMIC QUALIFICATIONS :</h5>
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-info" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    COLLEGE DETAILS
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="container">
+                                    <div class="form-group mt-2">
+                                        <label for="DegreeField1">Degree</label>
+                                        <input type="text" name="degree" id="DegreeField1" class="form-control"
+                                            placeholder="B.tech(Electrical Engineering)" />
+                                    </div>
+                                    <div class="form-group mt-2">
+                                        <label for="InsField1">Institution</label>
+                                        <input type="text" name="institution" id="InsField1" class="form-control"
+                                            placeholder="St.thomas' college of Engineering & Technology,Kolkata" />
+                                    </div>
+
+                                    <div class="form-group mt-2">
+                                        <label for="BoardField1">Board/University</label>
+                                        <input type="text" name="board" id="BoardField1" class="form-control"
+                                            placeholder=" CBSE " />
+                                    </div>
+                                    <div class="form-group mt-2">
+                                        <label for="MarksField1">CGPA / Percentage Obtained</label>
+                                        <input type="text" name="marks" id="MarksField1" class="form-control"
+                                            placeholder="8.6 or 80%" />
+                                    </div>
+                                    <div class="form-group mt-2">
+                                        <label for="YopField">Year of
+                                            passing</label>
+                                        <input type="text" name="yop" id="YopField1" class="form-control"
+                                            placeholder="2022 (persuing) or 2017" />
+                                    </div>
+                                    <!-- new acadamic qualification -->
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-success collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        CLASS XII
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="container">
+                                        <div class="form-group mt-2">
+                                            <label for="DegreeField2">Degree</label>
+                                            <input type="text" name="degree" id="DegreeField2" class="form-control"
+                                                placeholder="B.tech(Electrical Engineering)" />
+                                        </div>
+                                        <div class="form-group mt-2">
+                                            <label for="InsField2">Institution</label>
+                                            <input type="text" name="institution" id="InsField2" class="form-control"
+                                                placeholder="St.thomas' college of Engineering & Technology,Kolkata" />
+                                        </div>
+
+                                        <div class="form-group mt-2">
+                                            <label for="BoardField2">Board/University</label>
+                                            <input type="text" name="board" id="BoardField2" class="form-control"
+                                                placeholder=" CBSE " />
+                                        </div>
+                                        <div class="form-group mt-2">
+                                            <label for="MarksField2">CGPA / Percentage Obtained</label>
+                                            <input type="text" name="marks" id="MarksField2" class="form-control"
+                                                placeholder="8.6 or 80%" />
+                                        </div>
+                                        <div class="form-group mt-2">
+                                            <label for="YopField2">Year of
+                                                passing</label>
+                                            <input type="text" name="yop" id="YopField2" class="form-control"
+                                                placeholder="2022 (persuing) or 2017" />
+                                        </div>
+                                        <!-- new acadamic qualification -->
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-warning collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                            CLASS X
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <div class="container">
+                                            <div class="form-group mt-2">
+                                                <label for="DegreeField3">Degree</label>
+                                                <input type="text" name="degree" id="DegreeField3" class="form-control"
+                                                    placeholder="B.tech(Electrical Engineering)" />
+                                            </div>
+                                            <div class="form-group mt-2">
+                                                <label for="InsField3">Institution</label>
+                                                <input type="text" name="institution" id="InsField3" class="form-control"
+                                                    placeholder="St.thomas' college of Engineering & Technology,Kolkata" />
+                                            </div>
+
+                                            <div class="form-group mt-2">
+                                                <label for="BoardField3">Board/University</label>
+                                                <input type="text" name="board" id="BoardField3" class="form-control"
+                                                    placeholder=" CBSE " />
+                                            </div>
+                                            <div class="form-group mt-2">
+                                                <label for="MarksField3">CGPA / Percentage Obtained</label>
+                                                <input type="text" name="marks" id="MarksField3" class="form-control"
+                                                    placeholder="8.6 or 80%" />
+                                            </div>
+                                            <div class="form-group mt-2">
+                                                <label for="YopField3">Year of
+                                                    passing</label>
+                                                <input type="text" name="yop" id="YopField3" class="form-control"
+                                                    placeholder="2022 (persuing) or 2017" />
+                                            </div>
+                                            <!-- new acadamic qualification -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group mt-2" id="pro">
+                            <label for="ProField">Projects</label>
+                            <textarea name="project" id="ProField" class="form-control profield"
+                                placeholder="Mini project on Single phase induction motor"></textarea>
+                            <!-- add the projects  -->
+                            <div class="container text-center mt-3" id="pro_out">
+                                <button class="btn btn-primary btn-sm" onclick="addpro()">Add</button>
+                            </div>
+                        </div>
+
+                        <div class="form-group mt-2" id="co">
+                            <label for="CoField">CO-CURRICULAR AND EXTRA-CURRICULAR ACTIVITIES :</label>
+                            <textarea name="activity" id="CoField" class="form-control cofield"
+                                placeholder="Industrial training at Emt Megatherm Pvt Ltd."></textarea>
+                            <!-- add more co cirrcular -->
+                            <div class="container text-center mt-3" id="co_out">
+                                <button class="btn btn-primary btn-sm" onclick="addco()">Add</button>
+                            </div>
+                        </div>
+
+                        <div class="Activity my-4">
+                            <h5>TECHINAL SKILLS :</h5>
+                            <div class="container">
+                                <div class="form-group mt-2">
+                                    <label for="ToolField">Langauge and Tools </label>
+                                    <input type="text" name="tool" id="ToolField" class="form-control"
+                                        placeholder="C , C++ , Spring Boot , Matlab " />
+                                </div>
+                                <div class="form-group mt-2">
+                                    <label for="SubField">Subjects of Preference </label>
+                                    <input type="text" name="subField" id="SubField" class="form-control" placeholder=" ELECTRICAL MACHINES, COMPUTER NETWORK
+                                THEORY, DBMS " />
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+        <div class="container text-center my-5">
+            <button class="btn btn-danger btn-lg" onclick="generatecv()">Generate CV</button>
+        </div>
+    </div>
+
+    <!-- cv template -->
+    <div class="container" id="cv-template">
+        <h2 class="text-center my-4 font-weight-bold ">Resume</h2>
+        <br>
+        <!-- image -->
+        <img src="./pro.jpeg" height="200px" width="160px" id="ImgFieldT" class="rounded float-right mx-4" alt="...">
+        <h3 class="font-weight-bold text-uppercase" id="nameFieldT">Abhishek Shaw</h3>
+
+
+        <p><a class="font-weight-bold">Address:</a><a id="AddressFieldT">14/1 Ramanath paul road kolkata 700023</a></p>
+        <br><br><br>
+        <p><a class="font-weight-bold">Contact Number </a>+91 <a id="PhoneFieldT">9883059626</a></p>
+        <p><a class="font-weight-bold">Email id :</a><a id="EmailFieldT"> abhishekshaw813@gmail.com </a></p>
+        <!-- Carrer objectives -->
+        <h5 class="text-uppercase font-weight-bold"><u>Career Objectives :</u></h5>
+        <h5 id="ObjFieldT">To work for an organization which provides me the opportunity to explore new areas and gain knowledge in
+            this
+            dynamic and disruptive environment.</h5>
+
+        <!-- Academic details -->
+        <h5 class="font-weight-bold text-uppercase"><u>Academic Qualification</u> :</h5>
+        <table>
+            <tr>
+                <th>Degree</th>
+                <th>Institution</th>
+                <th>Board/University</th>
+                <th>CGPA / Percentage</th>
+                <th>Year of passing</th>
+            </tr>
+            <tr>
+                <td id="DegreeField1T">B.tech in Electrical Engineering</td>
+                <td id="InsField1T" >St.thomas college of Engineering and Technology</td>
+                <td id="BoardField1T">Maulana Abul Kalam Azad University of Technology</td>
+                <td id="MarksField1T">8.58</td>
+                <td id="YopField1T">2022 (persuing)</td>
+            </tr>
+            <tr>
+                <td id="DegreeField2T">Higher Secondary ( XII )</td>
+                <td id="InsField2T">Kendriya vidhyalaya fort william kolkata 700023</td>
+                <td id="BoardField2T">CBSE</td>
+                <td id="MarksField2T">81.6</td>
+                <td id="YopField2T">2018</td>
+            </tr>
+            <tr>
+                <td id="DegreeField3T">Secondary ( X )</td>
+                <td id="InsField3T">Kendriya vidhyalaya fort william kolkata 700023</td>
+                <td id="BoardField3T">CBSE</td>
+                <td id="MarksField3T">81.7</td>
+                <td id="YopField3T">2016</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <h5 class="text-uppercase font-weight-bold"><u>PROJECTS</u>:</h5>
+        <ul id="ProFieldT">
+            <li>Final year project on Smart energy monitor based on Arduino which includes measuring facility of utility
+                parameters of Electrical Energy.</li>
+            <li>Final year project on Smart energy monitor based on Arduino which includes measuring facility of utility
+                parameters of Electrical Energy.</li>
+            <li>Final year project on Smart energy monitor based on Arduino which includes measuring facility of utility
+                parameters of Electrical Energy.</li>
+        </ul>
+
+        <br>
+
+        <h5 class="font-weight-bold text-uppercase"><u>Technical Skills</u>:</h5>
+        <table>
+            <tr>
+                <th class="font-weight-bold">Langauges Known</th>
+                <td id="ToolFieldT">C++ , Python , JavaScript</td>
+            </tr>
+            <tr>
+                <th class="font-weight-bold">Subjects of Preference</th>
+                <td id="SubFieldT">ELECTRICAL MACHINES, ELECTRICAL CIRCUIT
+                    THEORY, DBMS</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <h5 class="text-uppercase font-weight-bold"><u>CO-CURRICULAR AND EXTRA-CURRICULAR ACTIVITIES</u>:</h5>
+        <ul id="CoFieldT">
+            <li>Industrial training at Emt Megatherm Pvt Ltd.</li>
+            <li>Industrial training at Emt Megatherm Pvt Ltd.</li>
+            <li>Industrial training at Emt Megatherm Pvt Ltd.</li>
+
+        </ul>
+        <h5 class="text-uppercase font-weight-bold"><u>PERSONAL DETAILS</u>:</h5>
+        <table>
+            <tr>
+                <th class="font-weight-bold">Date of Birth</th>
+                <td id="DobFieldT">29th december 1999</td>
+            </tr>
+            <tr>
+                <th class="font-weight-bold">Nationality </th>
+                <td id="NationFieldT">Indian</td>
+            </tr>
+            <tr>
+                <th class="font-weight-bold">Interests </th>
+                <td id="InterestFieldT">Exploring New food, Cricket matches, writing, exploring new movies.</td>
+            </tr>
+            <tr>
+                <th class="font-weight-bold">Languages Known</th>
+                <td id="LangFieldT">English, Bengali , Hindi</td>
+            </tr>
+            <tr>
+                <th class="font-weight-bold">Personal Stength </th>
+                <td id="StrengthFieldT">Adaptibility , Team Worker, Leadership</td>
+            </tr>
+        </table>
+        <br>
+        <p><a class="font-weight-bold">Place: </a><a id="PlaceFieldT">Kolkata</a></p>
+        <p class="text-right font-weight-bold">Signature: _____________</p>
+        <p><a class="font-weight-bold">Date: </a><a id="dateFieldT">17/12/2022</a></p>
+
+
+        <!-- button -->
+        <div class="container text-center">
+            <input type="button" class="btn btn-dark" id="btn-print" value="Print CV" onclick="printcv()">
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

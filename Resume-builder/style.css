@@ -1,0 +1,25 @@
+body {margin:0; padding:0; background:#fff;}
+#container{
+width:800px;
+height:100%;
+display: block;
+ margin: 0 auto;
+background-color: #E3EAEA;
+border-left:4px #000 solid;
+border-right:4px #000 solid;
+}
+table, td, th {
+    padding: 2px;
+    border: 2px solid black;
+    border-radius: 2px;
+    background-color: white;
+    text-align: center;
+  }
+  
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+#cv-template{
+  display: none;
+}
