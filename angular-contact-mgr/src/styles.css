@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+body{
+    font-family: 'Ubuntu',sans-serif !important;
+}
+.contact-image{
+    width: 150px;
+    border-radius: 50%;;
+}
+.contact-image-big{
+    width: 200px;
+    border-radius: 50%;
+}
+.hover{
+    cursor:pointer;
+}

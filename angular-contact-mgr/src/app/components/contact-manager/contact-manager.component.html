@@ -1,0 +1,61 @@
+<div class="container mt-3">
+    <div class="row">
+        <div class="col">
+            <p class="h3 text-danger fw-bold">Contacts
+                <a routerLink="/contacts/add" class="btn btn-sm btn-danger">
+                    <i class="fa fa-plus-circle"></i>
+                    New</a>
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ea deserunt, quibusdam unde alias vitae
+                quas maiores quos ullam veritatis suscipit molestias obcaecati delectus possimus vero aut! Corrupti,
+                officia consequatur!</p>
+            <form action="">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Search User">
+                            </div>
+                            <div class="col">
+                                <input type="submit" value="submit" class="btn btn-dark">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+<!-- cards -->
+
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card list-group-item-dark shadow-lg ">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="https://cdn.pixabay.com/photo/2018/08/28/12/41/avatar-3637425_1280.png"
+                                alt="person image" class="contact-image">
+                        </div>
+                        <div class="col-sm-7">
+                            <ul class="list-group  mt-2">
+                                <li class="list-group-item">Name : <span class="fw-bold">Name</span></li>
+                                <li class="list-group-item">Email : <span class="fw-bold">Email</span></li>
+                                <li class="list-group-item">Mobile : <span class="fw-bold">Mobile</span></li>
+                            </ul>
+
+                        </div>
+                        <div class="col-sm-1 d-flex flex-column justify-content-center align-items-center">
+                            <a class="btn btn-warning my-1 " routerLink="/contacts/view/:contactId"><i class="fa fa-eye"></i></a>
+                            <a class="btn  btn-primary my-1 " routerLink="/contacts/edit/:contactId"><i class="fa fa-pen"></i></a>
+                            <button class="btn btn-danger my-1 "><i class="fa fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
