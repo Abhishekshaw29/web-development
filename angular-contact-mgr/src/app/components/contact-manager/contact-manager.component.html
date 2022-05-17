@@ -27,23 +27,24 @@
         </div>
     </div>
 </div>
+<!-- <pre>{{contacts | json}}</pre> -->
 <!-- cards -->
 
-<div class="container mt-3">
+<div *ngIf=" !loading && contacts.length >0 " class="container mt-3">
     <div class="row">
-        <div class="col-md-6">
-            <div class="card list-group-item-dark shadow-lg ">
+        <div class="col-md-6" *ngFor="let contact of contacts">
+            <div class="card list-group-item-dark shadow-lg my-2 ">
                 <div class="card-body">
                     <div class="row">
                         <div class="col-sm-4">
-                            <img src="https://cdn.pixabay.com/photo/2018/08/28/12/41/avatar-3637425_1280.png"
+                            <img src="{{contact.photo}}"
                                 alt="person image" class="contact-image">
                         </div>
                         <div class="col-sm-7">
                             <ul class="list-group  mt-2">
-                                <li class="list-group-item">Name : <span class="fw-bold">Name</span></li>
-                                <li class="list-group-item">Email : <span class="fw-bold">Email</span></li>
-                                <li class="list-group-item">Mobile : <span class="fw-bold">Mobile</span></li>
+                                <li class="list-group-item">Name : <span class="fw-bold">{{contact.name}}</span></li>
+                                <li class="list-group-item">Email : <span class="fw-bold">{{contact.email}}</span></li>
+                                <li class="list-group-item">Mobile : <span class="fw-bold">{{contact.mobile}}</span></li>
                             </ul>
 
                         </div>
