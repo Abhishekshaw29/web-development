@@ -9,22 +9,33 @@
     </div>
 </div>
 
+<!-- loading -->
+<div *ngIf="loading">
+    <app-spinner></app-spinner>
+</div>
+
+<!-- error page -->
+<div *ngIf="!loading && errorMessage">
+    <p class="text-center">
+        {{errorMessage}}
+    </p>
+</div>
+
 <!-- Contact Details -->
 
-<div class="container">
+<div class="container" *ngIf="!loading && isNotEmpty()">
     <div class="row align-item-center">
         <div class="col-sm-4">
-            <img src="https://www.svgrepo.com/show/164117/man.svg" alt="contact image" class="contact-image-big">
+            <img [src]="contact.photo" alt="contact image" class="contact-image-big">
         </div>
         <div class="col-sm-6">
             <ul class="list-group mt-2">
-                <li class="list-group-item">Name : <span class="fw-bold">Name</span></li>
-                <li class="list-group-item">Email : <span class="fw-bold">Email</span></li>
-                <li class="list-group-item">Mobile : <span class="fw-bold">Mobile</span></li>
-                <li class="list-group-item">Email : <span class="fw-bold">Email</span></li>
-                <li class="list-group-item">Company : <span class="fw-bold">Company</span></li>
-                <li class="list-group-item">Title : <span class="fw-bold">Title</span></li>
-                <li class="list-group-item">Group Name : <span class="fw-bold">Group</span></li>
+                <li class="list-group-item">Name : <span class="fw-bold">{{contact.name}}</span></li>
+                <li class="list-group-item">Email : <span class="fw-bold">{{contact.email}}</span></li>
+                <li class="list-group-item">Mobile : <span class="fw-bold">{{contact.mobile}}</span></li>
+                <li class="list-group-item">Company : <span class="fw-bold">{{contact.company}}</span></li>
+                <li class="list-group-item">Title : <span class="fw-bold">{{contact.title}}</span></li>
+                <li class="list-group-item">Group Name : <span class="fw-bold">{{group.name}}</span></li>
             </ul>
         </div>
         
@@ -36,3 +47,5 @@
         </div>
     </div>
 </div>
+
+<!-- <pre>{{contact.name}}</pre> -->

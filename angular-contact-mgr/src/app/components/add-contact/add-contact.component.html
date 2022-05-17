@@ -10,32 +10,33 @@
 </div>
 
 <!-- create contact form -->
+<pre>{{contact | json}}</pre>
 
 <div class="container">
     <div class="row">
         <div class="col-md-4">
-            <form action="">
+            <form (submit)="createSubmit()">
                 <div class="mb-2">
-                    <input type="text" class="form-control" placeholder="Name">
+                    <input [(ngModel)]="contact.name" name="name" required="required" type="text" class="form-control" placeholder="Name">
                 </div>
                 <div class="mb-2">
-                    <input type="text" class="form-control" placeholder="Photo Url">
+                    <input [(ngModel)]="contact.photo" name="photo" required="required" type="url" class="form-control" placeholder="Photo Url">
                 </div>
                 <div class="mb-2">
-                    <input type="email" class="form-control" placeholder="Email">
+                    <input [(ngModel)]="contact.email" name="email" required="required"type="email" class="form-control" placeholder="Email">
                 </div>
                 <div class="mb-2">
-                    <input type="number" class="form-control" placeholder="Mobile number">
+                    <input [(ngModel)]="contact.mobile" name="mobile" required="required" type="number" class="form-control" placeholder="Mobile number">
                 </div>
                 <div class="mb-2">
-                    <input type="text" class="form-control" placeholder="Company">
+                    <input [(ngModel)]="contact.company" name="company" required="required" type="text" class="form-control" placeholder="Company">
                 </div>
                 <div class="mb-2">
-                    <input type="text" class="form-control" placeholder="title">
+                    <input [(ngModel)]="contact.title" name="title" required="required" type="text" class="form-control" placeholder="title">
                 </div>
                 <div class="mb-2">
-                    <select class="form-control" name="" id="">
-                        <option value="">Select a Group</option>
+                    <select class="form-control" [(ngModel)]="contact.groupId" name="groupId">
+                        <option [value]="group.id" *ngFor="let group of groups" aria-placeholder="hello">{{group.name}}</option>
                     </select>
                 </div>
                 <div class="mb-2">
@@ -46,7 +47,7 @@
             </form>
         </div>
         <div class="col-sm-4">
-            <img src="https://www.svgrepo.com/show/164117/man.svg" alt="" class="contact-image">
+            <img [src]="contact.photo" alt="" class="contact-image">
         </div>
     </div>
 </div>

@@ -44,9 +44,9 @@ export class ContactService {
   // -------------------------------
   
   //get all groups
-   public getAllGroups(): Observable<IGroup> {
+   public getAllGroups(): Observable<IGroup[]> {
     let dataUrl: string = `${this.serverUrl}/groups`;
-    return this.httpClient.get<IGroup>(dataUrl).pipe(catchError(this.handleError));
+    return this.httpClient.get<IGroup[]>(dataUrl).pipe(catchError(this.handleError));
   }
 
   // get single group
