@@ -1,16 +1,6 @@
 {
   "contacts": [
     {
-      "id": "D6BNdWnHI",
-      "name": "Brad Gibson",
-      "company": "YouTube",
-      "email": "brad@gmail.com",
-      "title": "Youtuber",
-      "mobile": "9876546787",
-      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0g8R5VmgqDqpRCwQfw2Y9V-DM-iXS59R9hQ&usqp=CAU",
-      "groupId": "3"
-    },
-    {
       "id": "TVobxeKbI",
       "name": "Glenda Kim",
       "company": "Friend",
@@ -39,16 +29,6 @@
       "title": "Software Engineer",
       "groupId": "1",
       "id": "kLt-bJF"
-    },
-    {
-      "photo": "https://www.pngfind.com/pngs/m/278-2789052_hello-png-transparent-background-hello-calligraphy-png-download.png",
-      "name": "Abhishek Shaw",
-      "email": "abhishekshaw813@gmail.com",
-      "mobile": 9883153542,
-      "company": "hcl",
-      "title": "java developer",
-      "groupId": "4",
-      "id": "OPVoQgG"
     }
   ],
   "groups": [

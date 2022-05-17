@@ -36,7 +36,7 @@ export class ContactService {
     return this.httpClient.put<IContact>(dataUrl, contact).pipe(catchError(this.handleError));
   }
   //update contact
-  public deleteContact(contactId:string): Observable<{}> {
+  public deleteContact(contactId:string | undefined): Observable<{}> {
     let dataUrl: string = `${this.serverUrl}/contacts/${contactId}`;
     return this.httpClient.delete<{}>(dataUrl).pipe(catchError(this.handleError));
   }

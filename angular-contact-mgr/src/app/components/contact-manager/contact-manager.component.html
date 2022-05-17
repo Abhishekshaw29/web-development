@@ -65,7 +65,7 @@
                         <div class="col-sm-1 d-flex flex-column justify-content-center align-items-center">
                             <a class="btn btn-warning my-1 " routerLink="/contacts/view/{{contact.id}}"><i class="fa fa-eye"></i></a>
                             <a class="btn  btn-primary my-1 " routerLink="/contacts/edit/{{contact.id}}"><i class="fa fa-pen"></i></a>
-                            <button class="btn btn-danger my-1 "><i class="fa fa-trash"></i></button>
+                            <button class="btn btn-danger my-1 " (click)="deleteContact(contact.id)"><i class="fa fa-trash"></i></button>
                         </div>
                     </div>
 

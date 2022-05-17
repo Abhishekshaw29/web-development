@@ -9,33 +9,50 @@
     </div>
 </div>
 
+
+<!-- 
+<pre>{{contactId}}</pre>
+<pre>{{contact | json}}</pre> -->
+
+<!-- loading -->
+<div *ngIf="loading">
+    <app-spinner></app-spinner>
+</div>
+
+<!-- error page -->
+<div *ngIf="!loading && errorMessage">
+    <p class="text-center">
+        {{errorMessage}}
+    </p>
+</div>
+
 <!-- edit contact form -->
 
-<div class="container">
+<div class="container" *ngIf="contact != null">
     <div class="row">
         <div class="col-md-4">
-            <form action="">
+            <form (submit)="updateContact()">
                 <div class="mb-2">
-                    <input type="text" class="form-control" placeholder="Name">
+                    <input type="text" [(ngModel)]="contact.name" name="name"  class="form-control" placeholder="Name">
                 </div>
                 <div class="mb-2">
-                    <input type="text" class="form-control" placeholder="Photo Url">
+                    <input type="text" [(ngModel)]="contact.photo" name="photo" class="form-control" placeholder="Photo Url">
                 </div>
                 <div class="mb-2">
-                    <input type="email" class="form-control" placeholder="Email">
+                    <input type="email" [(ngModel)]="contact.email" name="email" class="form-control" placeholder="Email">
                 </div>
                 <div class="mb-2">
-                    <input type="number" class="form-control" placeholder="Mobile number">
+                    <input type="number" [(ngModel)]="contact.mobile" name="mobile" class="form-control" placeholder="Mobile number">
                 </div>
                 <div class="mb-2">
-                    <input type="text" class="form-control" placeholder="Company">
+                    <input type="text"  [(ngModel)]="contact.company" name="company" class="form-control" placeholder="Company">
                 </div>
                 <div class="mb-2">
-                    <input type="text" class="form-control" placeholder="title">
+                    <input type="text" [(ngModel)]="contact.title" name="title" class="form-control" placeholder="title">
                 </div>
                 <div class="mb-2">
-                    <select class="form-control" name="" id="">
-                        <option value="">Select a Group</option>
+                    <select class="form-control"  name="" id="">
+                        <option *ngFor="let group of groups" [value]="group.id">{{group.name}}</option>
                     </select>
                 </div>
                 <div class="mb-2">
@@ -46,7 +63,7 @@
             </form>
         </div>
         <div class="col-sm-4">
-            <img src="https://www.svgrepo.com/show/164117/man.svg" alt="" class="contact-image">
+            <img src="{{contact.photo}}" alt="" class="contact-image">
         </div>
     </div>
 </div>
